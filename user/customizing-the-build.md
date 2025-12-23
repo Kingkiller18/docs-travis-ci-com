@@ -1,5 +1,5 @@
 ---
-title: Customize the Build
+Titel: Den Build anpassen
 layout: en
 
 redirect_from:
@@ -20,20 +20,20 @@ feature.
 
 Detailed information about Travis CI's build config format can be found in our
 [Travis CI Build Config Reference](https://config.travis-ci.com/). Additional
-information about Travis CI's use of YAML as a language to describe build
-configuration can be found [here](/user/build-config-yaml).
+Informationen über Travis CIs Verwendung von YAML als Sprache zur Beschreibung von Build
+Konfiguration gefunden werden kann. [Hier](/user/build-config-yaml.).
 
-Other features can be controlled through the repository's settings either
-through the Travis CI UI, or the Travis CI [command line client](https://github.com/travis-ci/travis.rb#readme).
+Andere Funktionen können entweder über die Einstellungen des Repositorys gesteuert werden.
+durch die Travis CI UI oder die Travis CI [Befehlszeilenclient.](https://github.com/travis-ci/travis.rb#readme).
 
 
-## Build Timeouts
+## Timeouts erstellen.
 
-It is very common for test suites or build scripts to hang.
-Travis CI has specific time limits for each job, and will stop the build and add an error message to the build log in the following situations:
+Es ist sehr üblich, dass Testsuiten oder Build-Skripte hängen.
+Travis CI hat spezifische Zeitlimits für jeden Auftrag und stoppt den Build und fügt dem Build-Log in den folgenden Situationen eine Fehlermeldung hinzu:
 
-- When a job produces no log output for 10 minutes.
-- When a job on a public repository takes longer than 50 minutes.
+- Wenn ein Job 10 Minuten lang keine Protokollausgabe erzeugt.
+- Wenn ein Job in einem öffentlichen Repository länger als 50 Minuten dauert.
 - When a job on a private repository takes longer than 120 minutes.
 
 Some common reasons why builds might hang:
